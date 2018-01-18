@@ -202,13 +202,13 @@ public class dog {
     private void updateHungry(Actions currentAction) {
         switch (currentAction) {
             case PET:
-                setState(States.SLEEPY); 			//  the dog stays happy
+                setState(States.HAPPY); 			//  the dog stays happy
                 break;
             case WALK:
-                setState(States.SLEEPY);
+                setState(States.HUNGRY);
                 break;
             case FEED:
-                setState(States.HAPPY);
+                setState(States.SLEEPY);
                 break;
             case IGNORE:
                 setState(States.ANGRY);
